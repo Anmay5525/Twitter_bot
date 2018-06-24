@@ -11,9 +11,6 @@ auth = tweepy.OAuthHandler(consumer_key = consumerKey, consumer_secret = consume
 auth.set_access_token(accessToken , accessTokenSecret)
 api = tweepy.API(auth)
 
-"""me = api.me()
-print(me.name)
-"""
 """
 for tweet in tweepy.Cursor(api.search, "fortnite", result_type = "recent", lang = "en").items(10) :
     print(tweet.user.screen_name)
